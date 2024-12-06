@@ -1,0 +1,11 @@
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+
+def lcm(a, b):
+    return abs(a * b) // gcd(a, b)
+
+num1 = 12
+num2 = 15
+print(lcm(num1, num2))  
